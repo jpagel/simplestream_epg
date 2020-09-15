@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('/channels', [Api::class, 'channels']);
+Route::get('/channels/{channel-uuid}/{date}/timezone/{timezone}', [Api::class, 'programmesByDate']);
+Route::get('/channels/{channel-uuid}/programmes/{programme-uuid}', [Api::class, 'programmeInformation']);
