@@ -23,10 +23,6 @@ class ProgrammeFactory extends Factory
     {
         return [
             'uuid' => bin2hex(random_bytes(16)),
-            'visible_name' => 'Test Show',
-            'description' => 'There is nothing like this show anywhere else on TV',
-            'thumbnail_ref' => 'test_ref',
-            'duration' => 3600
         ];
     }
 }

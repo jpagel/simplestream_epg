@@ -3,9 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Timetable;
-use Carbon\CarbonImmutable;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 
 class TimetableFactory extends Factory
 {
