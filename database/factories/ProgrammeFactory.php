@@ -22,7 +22,7 @@ class ProgrammeFactory extends Factory
     public function definition()
     {
         return [
-            'uuid' => bin2hex(random_bytes(16)),
+            'uuid' => $this->faker->uuid
         ];
     }
 }
