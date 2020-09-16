@@ -56,6 +56,7 @@ modification.
 ## Things I did not do
 - There is no exception handling: given more time I would have thrown appropriate exceptions and generated
 400 and 404 responses for invalid URLs
+- Happy paths only are tested: given more time I would write tests for error cases eg `HTTP Not Found`
 - There is no authentication. I would expect to add it as middleware and use the `WithoutMiddleware` trait
 in the functional tests.
 - There is no specific domain logic. In a more complicated system I would expect to write service classes in a
