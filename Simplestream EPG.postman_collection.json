@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "de9fd705-6d28-4e62-928f-1c53da42381e",
+		"name": "Simplestream EPG",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "channels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "list available channels"
+			},
+			"response": []
+		},
+		{
+			"name": "Programme Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/channels/531cc0da-aebc-3556-92ee-29d530a40448/programmes/8a475536-3f04-3901-a99c-7c773c7b4676",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"channels",
+						"531cc0da-aebc-3556-92ee-29d530a40448",
+						"programmes",
+						"8a475536-3f04-3901-a99c-7c773c7b4676"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Channel Listing",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/channels/531cc0da-aebc-3556-92ee-29d530a40448/2020-03-09/utc",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"channels",
+						"531cc0da-aebc-3556-92ee-29d530a40448",
+						"2020-03-09",
+						"utc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Channel Listing alternative timezone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/channels/531cc0da-aebc-3556-92ee-29d530a40448/2020-03-09/america-new_york",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"channels",
+						"531cc0da-aebc-3556-92ee-29d530a40448",
+						"2020-03-09",
+						"america-new_york"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
