@@ -23,7 +23,7 @@ class Api
 
     public function programmesByChannel(string $channelUuid, string $date, string $timezone)
     {
-        $channel = Channel::getByUuid($channelUuid);
-        return new ProgrammeCollectionResource(Timetable::getProgrammesByChannelId($channel->id));
+        $channel = Channel::getByUuid($channelUuid, $date);
+        return new ProgrammeCollectionResource(Timetable::getProgrammesByChannelIdAndDateAndTimezone($channel->id, $date, $timezone));
     }
 }
