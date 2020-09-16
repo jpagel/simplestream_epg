@@ -16,5 +16,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/channels', [Api::class, 'channels']);
-Route::get('/channels/{channel-uuid}/{date}/timezone/{timezone}', [Api::class, 'programmesByDate']);
-Route::get('/channels/{channel-uuid}/programmes/{programme-uuid}', [Api::class, 'programmeInformation']);
+Route::get('/channels/{channel_uuid}/programmes/{programme_uuid}', [Api::class, 'programmeInformation']);
+Route::get('/channels/{channel_uuid}/{date}/{timezone}', [Api::class, 'programmesByChannel']);

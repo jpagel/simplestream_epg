@@ -4,8 +4,6 @@ namespace Tests\Models;
 use App\Models\Programme;
 use App\Models\Timetable;
 use Carbon\CarbonImmutable;
-use Database\Factories\ProgrammeFactory;
-use Database\Factories\TimetableFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Tests\TestCase;
 
@@ -15,7 +13,7 @@ class TimetableTest extends TestCase
     /**
      * @test
      */
-    public function it_can_calculate_end_time()
+    public function it_can_calculate_following_start_time()
     {
         $programmeInstance = Programme::factory()->make([
             'visible_name' => 'Test Show',

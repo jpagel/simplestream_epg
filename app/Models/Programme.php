@@ -19,4 +19,11 @@ class Programme extends Model
         'thumbnail_ref',
         'duration'
     ];
+
+    public static function getByUuid(string $uuid): self
+    {
+        return self::where([
+            'uuid' => $uuid
+        ])->first();
+    }
 }

@@ -44,7 +44,7 @@ class ProgrammeSeeder extends Seeder
                 'visible_name' => sprintf('The %s Show', $name),
                 'description' => sprintf('Another hilarius episode in the life of %s', $name),
                 'thumbnail_ref' => sprintf('%s_thumbnail', $name),
-                'duration' => mt_rand(1,30) * 5
+                'duration' => mt_rand(1,30) * 5 * 60
             ]))->save();
         }
     }

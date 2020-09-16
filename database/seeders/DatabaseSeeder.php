@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             ChannelSeeder::class,
             ProgrammeSeeder::class,
-            //TimetableSeeder::class
+            TimetableSeeder::class
         ]);
     }
 }
